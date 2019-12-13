@@ -12,12 +12,16 @@ require "index.php";
 
 class UserValidation{
 
-  public $name;
-  public $email;
+  private $data;
+  private $errors = [];
+  private static $fields = ["username", "email"];
 
-  public function _construct($name,$email){
-    $this->name = $name;
-    $this->email = $email;
+  public function _construct($post_data){
+    $this->data = $post_data;
+  }
+
+  public function validateForm(){
+    
   }
 }
 
